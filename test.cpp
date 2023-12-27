@@ -101,7 +101,7 @@ struct T_Scene
 T_Scene T_day =
 {
     "T_day",
-    {236, 240, 241},      //skycolor
+    {202, 207, 210},      //skycolor
     {44,14,50},       //landcolor
     {68,121,207},       //rivercolor
     {25,10,29},         //darkrockscolor
@@ -146,7 +146,7 @@ T_Scene T_day =
     {33, 59, 122},      //rivershade3color
     {110,161,233},      //rivershade4color
     {255, 255, 255},    //starscolor
-    {178,15,17},        //radarbodycolor
+    {208, 211, 212},        //radarbodycolor
     {0, 0, 0},        //radarcolor
     {37,31,67},         //radarouterlinescolor
     {171, 178, 185},    //transmitterbodycolor
@@ -176,29 +176,29 @@ T_Scene T_night =
     {26, 43, 65},       //hubdarkcolor
     {255, 255, 255},    //laddercolor
     {0, 0, 0},          //hubgrillscolor
-    {255, 255, 255},    //towerbodycolor
-    {175, 186, 230},      //towershadowcolor
+    {39,24,55},    //towerbodycolor
+    {23,19,33},      //towershadowcolor
     {73, 189, 231},       //towerglasscolor
     {255, 255, 255},       //bridgecolor
     {175,186,230},      //bridgelayerscolor
     {225, 203, 19},     //bridgeboltscolor
     {175,186,230},      //bridgeshadowcolor
-    {147, 152, 158},    //rocketbodycolor
-    {255, 255, 255},    //rocketshadecolor
+    {23,19,33},    //rocketbodycolor
+    {121,122,138},    //rocketshadecolor
     {147, 152, 158},    //rocketouterlinescolor
     {46, 134, 193},    //planetcolor
     {24, 101, 70},      //planetlayers
-    {94,97,103},        //rovermetalcolor
-    {35,39,43},         //roverdarkmetalcolor
-    {11,76,104},        //roverwindowcolor
-    {212,133,105},      //roverlightscolor
-    {138,138,138},      //roverwheelscolor
+    {33, 47, 61},        //rovermetalcolor
+    {0,0,0},         //roverdarkmetalcolor
+    {241, 196, 15},        //roverwindowcolor
+    {241, 196, 15},      //roverlightscolor
+    {0,0,0},      //roverwheelscolor
     {61,62,64},         //roverwheelsscrewcolor
-    {210,211,213},      //roverlightmetalcolor
+    {39, 55, 70},      //roverlightmetalcolor
     {0, 0, 0},         //roveroutlinescolor
-    {255, 255, 255},    //boatcolor
+    {23, 32, 42},    //boatcolor
     {39,30,73},         //boatbottomcolor
-    {107,111,116},      //boatwindowcolor
+    {241, 196, 15},      //boatwindowcolor
     {23, 32, 42},      //spaceshipbodycolor
     {247, 220, 111},         //spaceshipwindowcolor
     {50,50,48},         //spaceshiplayercolor
@@ -216,7 +216,7 @@ T_Scene T_night =
     {255, 255, 255},    //transmittersignalcolor
     {255, 0, 0},        //transmitterantennacolor
     {166, 172, 175},    //transmittersteelbodycolor
-    {168,159,150},      //wallebodycolor
+    {112,93,94},      //wallebodycolor
     {82,63,68},         //walleshadowcolor
     {130,167,210},      //solarpanelcolor
     {0, 0, 0}           //walleoutlinescolor
@@ -644,6 +644,14 @@ void T_darkrocks(T_Color T_darkrocksColor = {25,10,29})
 
     T_polygon({{1427, 141},{1634, 124},{1879, 129},{1589, 152}}, T_currentScene.T_darkrocksColor);
 
+    T_polygon({{1258, 506},{1195, 492},{1275, 480}}, T_darkrocksColor);
+
+
+
+
+
+
+
 
 
     // far rocks
@@ -655,8 +663,29 @@ void T_darkrocks(T_Color T_darkrocksColor = {25,10,29})
 
     // far rocks shade
     T_polygon({{1234, 469},{1236, 484},{1249, 494},{1249, 479},{1259, 465}}, T_currentScene.T_darkrocksColor, -30, 40);
+    T_polygon({{1234, 469},{1236, 484},{1249, 494},{1249, 479},{1259, 465}}, T_currentScene.T_darkrocksColor, -300, 40);
+    T_polygon({{1234, 469},{1236, 484},{1249, 494},{1249, 479},{1259, 465}}, T_currentScene.T_darkrocksColor, -280, 30);
+    T_polygon({{1234, 469},{1236, 484},{1249, 494},{1249, 479},{1259, 465}}, T_currentScene.T_darkrocksColor, -290, 25);
     T_polygon({{1134, 510},{1187, 548},{1172, 518}}, T_currentScene.T_darkrocksColor, -65, -10);
+    T_polygon({{1134, 510},{1187, 548},{1172, 518}}, T_currentScene.T_darkrocksColor, -662, -18);
     T_polygon({{525, 469},{545, 492},{710, 469}}, T_currentScene.T_darkrocksColor, -80, 10);
+
+    T_polygon({{	1284, 521	},
+{	1359, 522	},
+{	1439, 519	},
+{	1340, 499	},
+}, T_darkrocksColor, 250);
+
+    T_polygon({{	815, 465	},
+{	825, 484	},
+{	841, 489	},
+{	856, 521	},
+{	883, 519	},
+{	919, 472	},
+}, T_darkrocksColor, -290);
+
+
+
 
 
 
@@ -884,7 +913,6 @@ void T_tower(T_Color T_towerbodyColor = {255, 255, 255}, T_Color T_towershadowCo
     T_polygon({{504, 726},{538, 705},{522, 701}}, T_currentScene.T_towershadowColor, 5, 1);
     T_polygon({{538, 705},{522, 701},{522, 514},{538, 511}}, T_currentScene.T_towershadowColor, 5, 1);
     T_polygon({{540, 843},{630, 867},{616, 843}}, T_currentScene.T_towershadowColor, 0, -5);
-    T_fullcircle(15, 545, 834, T_currentScene.T_towershadowColor);
 
 
 }
@@ -988,8 +1016,6 @@ void T_rover(T_Color T_rovermetalColor = {94,97,103}, T_Color T_roverdarkmetalCo
     T_polygon({{1267, 117},{1245, 74},{1405, 74},{1405, 83},{1391, 117}}, T_currentScene.T_roverlightmetalColor, 200, 0);
     T_linestrip({{1267, 117},{1245, 74},{1405, 74},{1405, 83},{1391, 117}}, T_currentScene.T_roveroutlinesColor, 200, 0);
 
-    T_polygon({{1250, 89},{1248, 86},{1450, 86},{1400, 89}}, T_currentScene.T_roverdarkmetalColor, 200, 0);
-
     T_polygon({{1265, 67},{1265, 64},{1305, 64},{1305, 67}}, T_currentScene.T_roverdarkmetalColor, 200, 0);
     T_polygon({{1265, 67},{1265, 64},{1305, 64},{1305, 67}}, T_currentScene.T_roverdarkmetalColor, 270, 0);
 
@@ -1003,7 +1029,7 @@ void T_rover(T_Color T_rovermetalColor = {94,97,103}, T_Color T_roverdarkmetalCo
 
     T_polygon({{1341, 119},{1331, 95},{1365, 95}}, T_currentScene.T_roverwindowColor, 200, 0);
 
-    T_polygon({{1250, 84},{1244, 76},{1249, 76}}, T_currentScene.T_roverlightsColor, 200, 0);
+    T_polygon({{1250, 84},{1244, 76},{1260, 76}}, T_currentScene.T_roverlightsColor, 200, 0);
 
     // wheels
     T_fullcircle(15, 1265+200, 42, T_currentScene.T_roverwheelsColor);
