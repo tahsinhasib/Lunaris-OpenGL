@@ -95,23 +95,24 @@ struct T_Scene
     T_Color T_walleshadowColor;
     T_Color T_solarpanelColor;
     T_Color T_walleoutlinesColor;
+    T_Color T_rocketflameColor;
 
 };
 
 T_Scene T_day =
 {
     "T_day",
-    {202, 207, 210},      //skycolor
+    {133, 193, 233},      //skycolor
     {44,14,50},       //landcolor
     {68,121,207},       //rivercolor
     {25,10,29},         //darkrockscolor
-    {60,65,114},        //lightrockscolor
+    {32,16,52},        //lightrockscolor
     {44,14,50},         //stoneholder
     {177,142,114},      //hubscolor
     {157,114,82},       //hubsshadowcolor
-    {0, 0, 0},     //hubdoorscolor
+    {23, 32, 42},     //hubdoorscolor
     {208, 211, 212},    //hubroofcolor
-    {157,114,82},       //hubdarkcolor
+    {110, 93, 55},       //hubdarkcolor
     {28, 40, 51},    //laddercolor
     {0, 0, 0},          //hubgrillscolor
     {255, 255, 255},    //towerbodycolor
@@ -121,7 +122,7 @@ T_Scene T_day =
     {175,186,230},      //bridgelayerscolor
     {23, 32, 42},     //bridgeboltscolor
     {175,186,230},      //bridgeshadowcolor
-    {147, 152, 158},    //rocketbodycolor
+    {23, 32, 42},    //rocketbodycolor
     {255, 255, 255},    //rocketshadecolor
     {147, 152, 158},    //rocketouterlinescolor
     {241, 196, 15},    //planetcolor
@@ -145,7 +146,7 @@ T_Scene T_day =
     {54,102,192},       //rivershade2color
     {33, 59, 122},      //rivershade3color
     {110,161,233},      //rivershade4color
-    {255, 255, 255},    //starscolor
+    {133, 193, 233},    //starscolor
     {208, 211, 212},        //radarbodycolor
     {0, 0, 0},        //radarcolor
     {37,31,67},         //radarouterlinescolor
@@ -153,11 +154,12 @@ T_Scene T_day =
     {0, 0, 0},          //transmitterouterlinescolor
     {255, 255, 255},    //transmittersignalcolor
     {0, 0, 0},        //transmitterantennacolor
-    {166, 172, 175},    //transmittersteelbodycolor
+    {23, 32, 42},    //transmittersteelbodycolor
     {168,159,150},      //wallebodycolor
     {82,63,68},         //walleshadowcolor
     {130,167,210},      //solarpanelcolor
-    {0, 0, 0}           //walleoutlinescolor
+    {0, 0, 0},          //walleoutlinescolor
+    {230, 126, 34}      //rocketflamecolor
 };
 
 T_Scene T_night =
@@ -165,7 +167,7 @@ T_Scene T_night =
     "T_night",
     {48, 89, 124},      //skycolor
     {37, 31, 67},       //landcolor
-    {68,121,207},       //rivercolor
+    {21, 67, 96},       //rivercolor
     {25,10,29},         //darkrockscolor
     {60,65,114},        //lightrockscolor
     {37,31,67},         //stoneholder
@@ -176,15 +178,15 @@ T_Scene T_night =
     {26, 43, 65},       //hubdarkcolor
     {255, 255, 255},    //laddercolor
     {0, 0, 0},          //hubgrillscolor
-    {39,24,55},    //towerbodycolor
+    {27, 38, 49},    //towerbodycolor
     {23,19,33},      //towershadowcolor
-    {73, 189, 231},       //towerglasscolor
-    {255, 255, 255},       //bridgecolor
-    {175,186,230},      //bridgelayerscolor
-    {225, 203, 19},     //bridgeboltscolor
-    {175,186,230},      //bridgeshadowcolor
-    {23,19,33},    //rocketbodycolor
-    {121,122,138},    //rocketshadecolor
+    {88, 214, 141},       //towerglasscolor
+    {27, 38, 49},       //bridgecolor
+    {66, 73, 73},      //bridgelayerscolor
+    {88, 214, 141},     //bridgeboltscolor
+    {23,19,33},      //bridgeshadowcolor
+    {88, 214, 141},    //rocketbodycolor
+    {23,19,33},    //rocketshadecolor
     {147, 152, 158},    //rocketouterlinescolor
     {46, 134, 193},    //planetcolor
     {24, 101, 70},      //planetlayers
@@ -197,18 +199,18 @@ T_Scene T_night =
     {39, 55, 70},      //roverlightmetalcolor
     {0, 0, 0},         //roveroutlinescolor
     {23, 32, 42},    //boatcolor
-    {39,30,73},         //boatbottomcolor
+    {28, 40, 51},         //boatbottomcolor
     {241, 196, 15},      //boatwindowcolor
     {23, 32, 42},      //spaceshipbodycolor
     {247, 220, 111},         //spaceshipwindowcolor
     {50,50,48},         //spaceshiplayercolor
     {0, 0, 0},          //spaceshipoutlinecolor
-    {61, 109, 186},     //rivershade1color
-    {54,102,192},       //rivershade2color
+    {36, 113, 163},     //rivershade1color
+    {26, 82, 118},       //rivershade2color
     {33, 59, 122},      //rivershade3color
-    {110,161,233},      //rivershade4color
+    {84, 153, 199},      //rivershade4color
     {255, 255, 255},    //starscolor
-    {178,15,17},        //radarbodycolor
+    {31, 97, 141},        //radarbodycolor
     {0, 255, 0},        //radarcolor
     {37,31,67},         //radarouterlinescolor
     {171, 178, 185},    //transmitterbodycolor
@@ -219,7 +221,8 @@ T_Scene T_night =
     {112,93,94},      //wallebodycolor
     {82,63,68},         //walleshadowcolor
     {130,167,210},      //solarpanelcolor
-    {0, 0, 0}           //walleoutlinescolor
+    {0, 0, 0},           //walleoutlinescolor
+    {230, 126, 34}      //rocketflamecolor
 };
 
 
@@ -246,7 +249,7 @@ void T_animatePlanets(int val)
     T_moveplanetX += 0.5;
     T_moveplanetY -= 0.5;
 
-    if (T_moveplanetY < -1000)
+    if (T_moveplanetY < -700)
     {
         T_moveplanetX = 0;
         T_moveplanetY = 0;
@@ -287,7 +290,7 @@ void T_animateSpaceshipLeft(int val)
 {
     T_movespaceshipX -= 2;
 
-    if (T_movespaceshipX < -2200)
+    if (T_movespaceshipX < -2800)
     {
         T_movespaceshipX = 0;
     }
@@ -392,6 +395,26 @@ void T_polygon(vector<pair<float, float>> coord, T_Color T_Color = {255,255,255}
 void T_halfcircle(float radius, float Tx, float Ty, T_Color T_Color = {255,255,255})
 {
     glBegin(GL_POLYGON);
+    for(int i=0; i<250; i++){
+        glColor3ub(T_Color.r, T_Color.g, T_Color.b);
+        float pi = 1.5708;
+        float A = (i*2*pi)/250;
+        float r = radius;
+        float x = r * cos(A);
+        float y = r * sin(A);
+        glVertex2f(x+Tx, y+Ty);
+    }
+    glEnd();
+}
+
+
+void T_halfcircleWithLines(float radius, float Tx, float Ty, T_Color T_Color = {255,255,255})
+{
+    glPointSize(0.5);
+    glEnable(GL_POINT_SMOOTH);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glBegin(GL_POINTS);
     for(int i=0; i<250; i++){
         glColor3ub(T_Color.r, T_Color.g, T_Color.b);
         float pi = 1.5708;
@@ -551,7 +574,6 @@ void T_blinkingWalleEyes(float Tx, float Ty, T_Color blink = {0, 255, 0})
 
 
 
-
 // Project functions
 
 void T_sky(T_Color T_skyColor = {48, 89, 124})
@@ -614,7 +636,7 @@ void T_river(T_Color T_riverColor = {68,121,207}, T_Color T_landColor = {37,31,6
 
 
 
-    T_polygon({{1920, 0},{1920, 470},{0, 470},{0, 0}}, T_riverColor, 0, 0);
+    T_polygon({{1920, 0},{1920, 470},{0, 470},{0, 0}}, T_currentScene.T_riverColor, 0, 0);
 
 
     T_polygon({{664, 319},{750, 297},{829, 311},{884, 311},{938, 338}}, T_currentScene.T_landColor, -600, 140);
@@ -666,23 +688,14 @@ void T_darkrocks(T_Color T_darkrocksColor = {25,10,29})
     T_polygon({{1234, 469},{1236, 484},{1249, 494},{1249, 479},{1259, 465}}, T_currentScene.T_darkrocksColor, -300, 40);
     T_polygon({{1234, 469},{1236, 484},{1249, 494},{1249, 479},{1259, 465}}, T_currentScene.T_darkrocksColor, -280, 30);
     T_polygon({{1234, 469},{1236, 484},{1249, 494},{1249, 479},{1259, 465}}, T_currentScene.T_darkrocksColor, -290, 25);
+    T_polygon({{1234, 469},{1236, 484},{1249, 494},{1249, 479},{1259, 465}}, T_currentScene.T_darkrocksColor, -250, 25);
     T_polygon({{1134, 510},{1187, 548},{1172, 518}}, T_currentScene.T_darkrocksColor, -65, -10);
     T_polygon({{1134, 510},{1187, 548},{1172, 518}}, T_currentScene.T_darkrocksColor, -662, -18);
     T_polygon({{525, 469},{545, 492},{710, 469}}, T_currentScene.T_darkrocksColor, -80, 10);
 
-    T_polygon({{	1284, 521	},
-{	1359, 522	},
-{	1439, 519	},
-{	1340, 499	},
-}, T_darkrocksColor, 250);
+    T_polygon({{1284, 521},{1359, 522},{1439, 519},{1340, 499}}, T_darkrocksColor, 250);
 
-    T_polygon({{	815, 465	},
-{	825, 484	},
-{	841, 489	},
-{	856, 521	},
-{	883, 519	},
-{	919, 472	},
-}, T_darkrocksColor, -290);
+
 
 
 
@@ -919,8 +932,36 @@ void T_tower(T_Color T_towerbodyColor = {255, 255, 255}, T_Color T_towershadowCo
 
 void T_towerbridge(T_Color T_bridgeColor = {255, 255, 255}, T_Color T_bridgelayersColor = {175,186,230}, T_Color T_bridgeboltsColor = {225, 203, 19}, T_Color T_bridgeshadowColor = {175,186,230})
 {
+    T_halfcircleWithLines(50, 694, 610, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 794, 610, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 894, 610, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 994, 610, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1094, 610, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1194, 610, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1294, 610, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1394, 610, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1494, 610, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1594, 610, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1694, 610, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1794, 610, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1894, 610, T_currentScene.T_bridgeboltsColor);
+
+    T_halfcircleWithLines(50, 694, 600, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 794, 600, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 894, 600, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 994, 600, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1094, 600, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1194, 600, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1294, 600, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1394, 600, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1494, 600, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1594, 600, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1694, 600, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1794, 600, T_currentScene.T_bridgeboltsColor);
+    T_halfcircleWithLines(50, 1894, 600, T_currentScene.T_bridgeboltsColor);
     // main bridge
     T_polygon({{615, 620},{615, 590},{1920, 590},{1920, 620}}, T_currentScene.T_bridgeColor);
+
 
     //upper lights
     T_polygon({{615, 620},{630, 610},{730, 610},{745, 620}}, T_currentScene.T_bridgeshadowColor, 0, 0);
@@ -937,15 +978,17 @@ void T_towerbridge(T_Color T_bridgeColor = {255, 255, 255}, T_Color T_bridgelaye
     T_polygon({{615, 590},{615, 585},{1920, 585},{1920, 590}}, T_currentScene.T_bridgelayersColor);
 
     // lower lights
-    T_points3({{645, 585},{745, 585},{825, 585},{905, 585},{985, 585},{1065, 585},{1145, 585},{1225, 585},{1305, 585},{1385, 585},{1465, 585},{1545, 585},{1625, 585},{1705, 585},{1785, 585},{1865, 585}}, T_currentScene.T_bridgeboltsColor);
-}
+    T_points3({{645, 585},{745, 585},{845, 585},{945, 585},{1045, 585},{1145, 585},{1245, 585},{1345, 585},{1445, 585},{1545, 585},{1645, 585},{1745, 585},{1845, 585},{1945, 585},{2045, 585},{2145, 585}}, T_currentScene.T_bridgeboltsColor);
 
+
+
+}
 
 
 
 //animations
 
-void T_rocket(T_Color T_rocketbodyColor = {147, 152, 158}, T_Color T_rocketshadeColor = {255, 255, 255}, T_Color rocketouterlines = {147, 152, 158})
+void T_rocket(T_Color T_rocketbodyColor = {147, 152, 158}, T_Color T_rocketshadeColor = {255, 255, 255}, T_Color rocketouterlines = {147, 152, 158}, T_Color rocketflameColor = {230, 126, 34})
 {
     glMatrixMode(GL_MODELVIEW);
     glPushMatrix();
@@ -1077,6 +1120,7 @@ void T_spaceship(T_Color T_spaceshipbodyColor = {226,225,231}, T_Color T_spacesh
 {
     glMatrixMode(GL_MODELVIEW);
     glPushMatrix();
+    glTranslatef(500, 0, 0);
     glTranslatef(T_movespaceshipX, 0, 0);
 
     T_polygon({{1629, 985},{1604, 968},{1632, 954},{1695, 954},{1732, 967},{1745, 987},{1723, 987},{1643, 987}}, T_currentScene.T_spaceshipbodyColor);
@@ -1398,33 +1442,16 @@ void T_walle(T_Color T_wallebodyColor = {168,159,150}, T_Color T_walleshadowColo
 }
 
 
-
-void T_keyboard(int key, int x, int y)
+void T_keyboard(unsigned char key, int x, int y)
 {
     switch(key)
     {
-    case GLUT_KEY_LEFT:
-        T_daynighttracker--;
-        T_daynighttracker = T_daynighttracker % 2;
-
-        if(T_daynighttracker <0)
-        {
-            T_daynighttracker=1;
-        }
-
-        T_currentScene = array[T_daynighttracker];
+    case 'd':
+        T_currentScene = array[0];
         glutPostRedisplay();
         break;
-    case GLUT_KEY_RIGHT:
-        T_daynighttracker--;
-        T_daynighttracker = T_daynighttracker % 2;
-
-        if(T_daynighttracker <0)
-        {
-            T_daynighttracker=1;
-        }
-
-        T_currentScene = array[T_daynighttracker];
+    case 'n':
+        T_currentScene = array[1];
         glutPostRedisplay();
         break;
     }
@@ -1432,47 +1459,33 @@ void T_keyboard(int key, int x, int y)
 
 
 
-
 void T_display() {
 	glClearColor(1, 1, 1, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
 
-
     T_sky();
     T_stars();
-
     T_externalplanet();
     T_towerbridge();
     T_tower();
-
     T_rocket();
-
 	T_river();
 	T_riverflow();
 	T_boat1();
-
     T_land();
     T_darkrocks();
     T_lightrocks();
-
     T_Fire(P1, P2);
     idle();
     T_specialstoneholder();
-
-
-
+    T_radar();
     T_walle();
     T_researchHub2();
     T_researchHub1();
-
     T_researchHub3();
-
     T_rover();
     T_researchHub4();
-
-
     T_spaceship();
-    T_radar();
     T_transmitter();
     T_transmittersignal();
     T_blinkingCircle(275, 706);
@@ -1485,8 +1498,6 @@ void T_display() {
 }
 
 
-
-
 int main(int argc, char** argv) {
 	glutInit(&argc, argv);
 	glutInitWindowSize(1920, 1080);
@@ -1495,7 +1506,7 @@ int main(int argc, char** argv) {
 	glutInitWindowPosition(0, 0);
 	glutCreateWindow("Lunaris");
 
-	glutSpecialFunc(T_keyboard);
+	glutKeyboardFunc(T_keyboard);
 
     //this line must be below of glutCreateWindow();
     gluOrtho2D(0, 1920, 0, 1080);
