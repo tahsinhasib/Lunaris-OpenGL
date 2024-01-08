@@ -1,6 +1,6 @@
 # Lunaris-Open-GL
 
-<img src = "https://img.shields.io/badge/Made%20for-Codeblocks-1f425f.svg"> <img src = "https://img.shields.io/github/last-commit/tahsinhasib/Lunaris-Open-GL.svg"> <img src = "https://img.shields.io/github/stars/{username}/{repo-name}.svg">
+<img src = "https://img.shields.io/badge/Made%20for-Codeblocks-1f425f.svg"> <img src = "https://img.shields.io/github/last-commit/tahsinhasib/Lunaris-Open-GL.svg"> <img src = "https://img.shields.io/github/stars/tahsinhasib/Lunaris-Open-GL.svg">
 
 <h3>How to use</h3>
 <p align="justify">This project was made using <code>GLUT</code> library. You have to ensure you have <code>glut.h</code> , <code>GL/glut.h</code> header files in your codeblocks libraires. Without the mentioned files the project cannot be run. The files can be downloaded from the internet searching <code>freeglut</code> for codeblocks. If the following criteria is met just open the <code>Lunaris.cbp</code> in your codeblocks and run.</p>
